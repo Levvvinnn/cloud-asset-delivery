@@ -1,0 +1,9 @@
+aws:
+  region: us-east-1
+  s3:
+    bucket: mycdn-origin
+
+cloudfront:
+  domain: d4kivs27yfm73.cloudfront.net
+server:
+  port: 8080
