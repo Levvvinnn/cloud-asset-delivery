@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CloudAssetDeliveryApplication<cloud-asset-delivery>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.levin.cloud_asset_delivery.CloudAssetDeliveryApplication",
+            "projectName": "cloud-asset-delivery",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
