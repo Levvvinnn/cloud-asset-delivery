@@ -1,4 +1,4 @@
-package main.java.com.levin.assetservice.model;
+package com.levin.assetservice.model;
 
 public class AssetMetadata {
     

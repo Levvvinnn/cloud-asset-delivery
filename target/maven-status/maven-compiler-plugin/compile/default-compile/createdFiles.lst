@@ -1,0 +1,5 @@
+com\levin\assetservice\config\AwsConfig.class
+com\levin\assetservice\controller\AssetController.class
+com\levin\assetservice\model\AssetMetadata.class
+com\levin\assetservice\AssetServiceApplication.class
+com\levin\assetservice\service\S3AssetService.class

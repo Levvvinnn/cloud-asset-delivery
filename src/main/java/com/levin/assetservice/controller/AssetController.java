@@ -1,4 +1,4 @@
-package main.java.com.levin.assetservice.controller;
+package com.levin.assetservice.controller;
 
 public class AssetController {
     
