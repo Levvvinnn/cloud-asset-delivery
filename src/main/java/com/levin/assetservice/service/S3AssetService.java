@@ -1,13 +1,14 @@
 package com.levin.assetservice.service;
 
 import java.io.IOException;
+import java.time.Instant;
 import java.util.UUID;
 
+import com.levin.assetservice.model.AssetMetadata;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-
-import com.levin.assetservice.model.AssetMetadata;
-
+import software.amazon.awssdk.core.sync.RequestBody;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 
@@ -37,7 +38,7 @@ public class S3AssetService {
                 .build();
 
         s3.putObject(putReq, RequestBody.fromInputStream(file.getInputStream(), file.getSize()));
-        
-
+        String cdnUrl = String.format("https://%s/%s", cloudfrontDomain, key);
+        return new AssetMetadata(key, original, file.getContentType(), file.getSize(), Instant.now(), cdnUrl);
     }
 }
