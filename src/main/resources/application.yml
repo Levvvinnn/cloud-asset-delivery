@@ -5,6 +5,14 @@ aws:
 
 cloudfront:
   domain: d4kivs27yfm73.cloudfront.net
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
 server:
   port: 8080
- 
+  tomcat:
+    max-http-form-post-size: 52428800  

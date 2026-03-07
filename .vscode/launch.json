@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AssetServiceApplication",
+            "request": "launch",
+            "mainClass": "com.levin.assetservice.AssetServiceApplication",
+            "projectName": "asset-service"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-CloudAssetDeliveryApplication<cloud-asset-delivery>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
