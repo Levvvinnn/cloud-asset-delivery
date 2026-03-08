@@ -10,4 +10,4 @@ public class AssetServiceApplication {
 		SpringApplication.run(AssetServiceApplication.class, args);
 	}
 
-}
+} 
