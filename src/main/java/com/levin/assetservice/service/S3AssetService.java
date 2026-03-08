@@ -31,6 +31,15 @@ public class S3AssetService {
 
         String cacheControl="public, max-age=31536000,immutable";
 
+        String contentType = file.getContentType();
+        if (contentType == null || contentType.isBlank()) {
+            contentType = java.net.URLConnection.guessContentTypeFromName(original);
+        }
+        if (contentType == null || contentType.isBlank()) {
+            contentType = "application/octet-stream";
+        }
+
+
         PutObjectRequest putReq=PutObjectRequest.builder()
                 .bucket(bucket)
                 .key(key)
