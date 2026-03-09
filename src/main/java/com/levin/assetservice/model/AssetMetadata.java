@@ -15,5 +15,5 @@ public class AssetMetadata {
     private String contentType;
     private long size;
     private Instant uploadedAt;
-    private String cdnUrl;
+    private String signedUrl;
 }

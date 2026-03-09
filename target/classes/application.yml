@@ -4,9 +4,9 @@ aws:
     bucket: mycdn-origin
 
 cloudfront:
-  domain: d4kivs27yfm73.cloudfront.net
-  key-pair-id: my-cf-pubkey
-  private-key-path: cloudfront-private.pem
+  domain: d4kivs27yfm73.cloudfront.net        
+  key-pair-id: KSAAU19RELU1J               
+  private-key-path: cloudfront-private.pem   
 
 spring:
   servlet:
@@ -17,4 +17,4 @@ spring:
 server:
   port: 8080
   tomcat:
-    max-http-form-post-size: 52428800  
+    max-http-form-post-size: 52428800   
