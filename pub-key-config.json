@@ -1,0 +1,5 @@
+{
+  "CallerReference": "unique-string-20260308",
+  "Name": "my-cf-pubkey",
+  "EncodedKey": "<BASE64-ENCODED-PUBLIC-KEY>"
+}
