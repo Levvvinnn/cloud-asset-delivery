@@ -1,5 +1,11 @@
 {
   "CallerReference": "unique-string-20260308",
   "Name": "my-cf-pubkey",
-  "EncodedKey": "<BASE64-ENCODED-PUBLIC-KEY>"
+  "EncodedKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiYDMRQYbDZpAAXBFGCXV
+df2ga79MkHCZfZxw7RStznJq7/rrHnx7wrWxXZz6yDqvlBa4nXyQ2clFZIN9F03Z
+ukaHeNeO7KpOrXSK370ijQYIp1Qa9yx6bvKEYW4s3IHUccHbfw1as/KRo4rtdpvS
+xQ4RBBjhvdwEfskJPqKQoD3bGLmS32LfFZ6LCSIDp7wBTEYurp5vYrchpsztHX2l
+gNOFJOZF4eMe6t9D3xBJ8wsYpTNjwKuXPJ0zUIXezo/OI8CfRsAu3EpME11UgqbQ
+ddDBUNVrzoGTGSGSz6VNxQC6Sj7mPzw/7RGWKnK040ebML94bXxek4PxTgpkrGtl
+aQIDAQAB"
 }
