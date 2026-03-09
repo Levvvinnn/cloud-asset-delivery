@@ -18,7 +18,7 @@ public class S3AssetService {
     private final String bucket;
     private final String cloudfrontDomain;
 
-    public S3AssetService(S3Client s3,@Value("${aws.s3.bucket}") String bucket,@Value("${aws.s3.bucket}") String cloudfrontDomain) {
+    public S3AssetService(S3Client s3,@Value("${aws.s3.bucket}") String bucket,@Value("${cloudfront.domain}") String cloudfrontDomain) {
         this.s3 = s3;
         this.bucket = bucket;
         this.cloudfrontDomain = cloudfrontDomain;

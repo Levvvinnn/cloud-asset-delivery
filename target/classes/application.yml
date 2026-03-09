@@ -5,6 +5,8 @@ aws:
 
 cloudfront:
   domain: d4kivs27yfm73.cloudfront.net
+  key-pair-id: my-cf-pubkey
+  private-key-path: cloudfront-private.pem
 
 spring:
   servlet:

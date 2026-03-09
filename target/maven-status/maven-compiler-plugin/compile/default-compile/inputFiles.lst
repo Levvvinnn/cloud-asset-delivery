@@ -3,3 +3,4 @@ C:\Users\levin\OneDrive\Desktop\cloudasset\src\main\java\com\levin\assetservice\
 C:\Users\levin\OneDrive\Desktop\cloudasset\src\main\java\com\levin\assetservice\controller\AssetController.java
 C:\Users\levin\OneDrive\Desktop\cloudasset\src\main\java\com\levin\assetservice\model\AssetMetadata.java
 C:\Users\levin\OneDrive\Desktop\cloudasset\src\main\java\com\levin\assetservice\service\S3AssetService.java
+C:\Users\levin\OneDrive\Desktop\cloudasset\src\main\java\com\levin\assetservice\util\CloudFrontSignerUtil.java
