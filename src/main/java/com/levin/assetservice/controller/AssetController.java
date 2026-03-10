@@ -8,7 +8,6 @@ import java.util.Map;
 import com.levin.assetservice.model.AssetMetadata;
 import com.levin.assetservice.service.S3AssetService;
 import com.levin.assetservice.util.CloudFrontSignerUtil;
-import com.levin.assetservice.service.S3AssetService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
