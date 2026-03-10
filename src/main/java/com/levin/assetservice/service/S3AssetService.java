@@ -5,6 +5,8 @@ import java.nio.file.Paths;
 import java.time.Instant;
 import java.util.UUID;
 
+import com.levin.assetservice.model.AssetMetadata;
+import com.levin.assetservice.util.CloudFrontSignerUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -60,7 +62,7 @@ public class S3AssetService {
 
         s3.putObject(putReq, RequestBody.fromInputStream(file.getInputStream(), file.getSize()));
         try {
-            String signedUrl = CloudFrontSignerUtil.generateSignedUrl(cloudfrontDomain, key, keyPairId, Paths.get(privateKeyPath), 3600); // 1 hour TTL
+            String signedUrl = CloudFrontSignerUtil.generateSignedUrl(cloudfrontDomain, key, keyPairId, Paths.get(privateKeyPath), 3600);
             return new AssetMetadata(key, original, file.getContentType(), file.getSize(), Instant.now(), signedUrl);
         } catch (Exception e) {
             logger.error("Failed to generate signed URL for key: {}", key, e);
