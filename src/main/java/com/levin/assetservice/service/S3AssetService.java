@@ -53,7 +53,6 @@ public class S3AssetService {
             contentType = "application/octet-stream";
         }
 
-
         PutObjectRequest putReq=PutObjectRequest.builder()
                 .bucket(bucket)
                 .key(key)
